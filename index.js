@@ -21,4 +21,8 @@ bot.on("message", message => {
         console.log("commande help demandée !");
     }
 
+    if (message.content === "sava ?"){
+        message.reply("Bien bien et toi ? ^^");
+        console.log('Sava ? oui et toi ? ^^')
+    }
 });
