@@ -17,7 +17,7 @@ bot.on("message", message => {
     }
 
     if (message.content === prefix + "help"){
-        message.channel.sendMessage("\n ./help pour afficher les commandes");
+        message.channel.sendMessage("\n -/help pour afficher les commandes");
         console.log("commande help demandée !");
     }
 
