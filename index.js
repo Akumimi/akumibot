@@ -16,7 +16,7 @@ bot.on("message", message => {
         console.log('Hey salut ! :)')
     }
 
-    if (message.content(prefix + "help")){
+    if (message.content === prefix + "help"){
         message.channel.sendMessage("\n ./help pour afficher les commandes");
         console.log("commande help demandée !");
     }
