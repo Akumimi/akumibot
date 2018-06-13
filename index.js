@@ -1,6 +1,7 @@
 const Discord = require("discord.js");
 
 var bot = new Discord.Client();
+var prefix = ("/");
 
 bot.on("ready", function() {
     bot.user.setGame("Senpai");
@@ -14,4 +15,10 @@ bot.on("message", message => {
         message.reply("Hey ! :)");
         console.log('Hey salut ! :)')
     }
+
+    if (message.content(prefix + "help")){
+        message.channel.sendMessage("\n ./help pour afficher les commandes");
+        console.log("commande help demandée !");
+    }
+
 });
