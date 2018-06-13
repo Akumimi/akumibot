@@ -25,4 +25,5 @@ bot.on("message", message => {
         message.reply("Bien bien et toi ? ^^");
         console.log('Sava ? oui et toi ? ^^')
     }
+    
 });
